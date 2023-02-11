@@ -77,7 +77,6 @@
     "eslint": "^8.8.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^9.7.0",
-    "husky": "^7.0.4",
     "lint-staged": "11.1.2",
     "picocolors": "^1.0.0",
     "postcss": "^8.4.18",
@@ -90,7 +89,6 @@
     "rollup-plugin-visualizer": "^5.8.3",
     "sass": "^1.56.1",
     "sass-loader": "^13.2.0",
-    "stylelint": "^14.3.0",
     "stylelint-config-html": "^1.0.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended": "^9.0.0",
@@ -119,6 +117,11 @@
     }
   },
   "repository": "git@github.com:xiaoxian521/pure-admin-thin.git",
-  "author": "xiaoxian521",
-  "license": "MIT"
+  "author": "Tiam",
+  "license": "MIT",
+  "lint-staged": {
+    "*.{css,less,scss,vue,html,md}": [
+      "stylelint --fix --allow-empty-input"
+    ]
+  }
 }

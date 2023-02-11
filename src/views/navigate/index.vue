@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header @setTiltle="setTitle" @setCat="setCat" />
+    <Header @setTitle="setTitle" @setCat="setCat" />
 
     <el-table
       :data="tableData"

@@ -46,9 +46,10 @@ import axios from "@/utils/http/axios";
 const emit = defineEmits(["setTitle", "setCat"]);
 
 const title = ref("");
-watch(title, val => {
+watch(title, val => { 
   emit("setTitle", val);
 });
+
 const category = ref("");
 watch(category, val => {
   emit("setCat", val);
